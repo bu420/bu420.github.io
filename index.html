@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name='viewport' content='width=device-width,initial-scale=1'>
         <title>bu's links</title>
         <style>
             @font-face {
@@ -12,7 +13,6 @@
                 font-family: 'Classic Console Neue', 'Lucida Console', monospace;
                 background-color: #333333;
                 color: #d6d6d6;
-                font-size: 1.2rem;
             }
 
             a {
@@ -33,20 +33,44 @@
                 border-spacing: 2ch 0;
                 margin: 0 -2ch;
             }
+
+            @media (min-width: 1025px) {
+                body {
+                    font-size: 1.6rem;
+                }
+
+                table {
+                    margin: 0;
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            @media (max-width: 1024px) {
+                body {
+                    font-size: 1.2rem;
+                }
+            }
         </style>
     </head>
     <body>
         <table>
             <tr>
-                <td>bu's links</td>
+                <td style='color: #00FFFF'>bu's links</td>
             </tr>
             <tr>
                 <td>github</td>
-                <td><a href='https://github.com/bu420'>github.com/bu420</a></td>
+                <td><a href='https://github.com/bu420' style='color: #A9A9A9'>github.com/bu420</a></td>
             </tr>
             <tr>
                 <td>minecraft server</td>
-                <td><a href='https://discord.gg/y6bRYHWAyG'>discord.gg/y6bRYHWAyG</a></td>
+                <td><a href='https://discord.gg/y6bRYHWAyG' style='color: #A9A9A9'>discord.gg/y6bRYHWAyG</a></td>
+            </tr>
+            <tr>
+                <td>mud (upcoming)</td>
+                <td><span style='color: #A9A9A9'>>ssh mud.1-o.cc</span></td>
             </tr>
         </table>
     </body>
